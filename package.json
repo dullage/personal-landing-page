@@ -1,0 +1,15 @@
+{
+  "name": "personal-landing-page",
+  "version": "0.0.0",
+  "description": "My personal landing page.",
+  "scripts": {
+    "hugo-server": "set HUGO_VERSION=0.111.3/extended& hugo server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Dullage",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "5.2.3",
+    "hugo-cli": "0.12.2"
+  }
+}
