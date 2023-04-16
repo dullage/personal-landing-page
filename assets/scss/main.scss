@@ -1,5 +1,30 @@
 @import "bootstrap/dist/css/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons.scss";
 
-h1 {
-  color: red;
+@import "./colours";
+@import "./typography";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--colour-background);
+  color: var(--colour-text);
+  font-family: "Source Code Pro", monospace;
+}
+
+a {
+  color: var(--colour-text);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--colour-text);
+    opacity: 0.6;
+  }
+}
+
+.icon {
+  color: var(--colour-text);
 }

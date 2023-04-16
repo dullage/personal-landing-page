@@ -11,10 +11,14 @@
   {{ $sass := resources.Get "scss/main.scss" }}
   {{ $stylesheet := $sass | resources.ToCSS $options }}
   <link rel="stylesheet" href="{{ $stylesheet.RelPermalink }}">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Serif+Pro&display=swap">
 </head>
 
 <body>
-  {{ block "main" . }}{{ end }}
+  <div class="container">
+    {{ block "main" . }}{{ end }}
+  </div>
 </body>
 
 </html>

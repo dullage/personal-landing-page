@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="vh-100 py-3 d-flex flex-column">
+  <div class="flex-grow-1 d-flex flex-column align-items-center justify-content-center">
+
+    <span class="hero text-center">Adam Dullage</span>
+
+    <span class="system text-center mb-5">Pizza Lover</span>
+
+    <div class="row gx-4">
+      <a class="col d-flex" href="https://github.com/Dullage">
+        <i class="bi bi-github me-2"></i>
+        <span>GitHub</span>
+      </a>
+      <a class="col d-flex" href="https://www.linkedin.com/in/adamdullage/">
+        <i class="bi bi-linkedin me-2"></i>
+        <span>LinkedIn</span>
+      </a>
+      <a class="col d-flex" href="mailto:adam@dullage.com">
+        <i class="bi bi-envelope-fill me-2"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </div>
+
+  <a class="d-flex flex-column align-items-center" href="#posts">
+    <span class="system">Posts</span>
+    <i class="bi bi-chevron-compact-down"></i>
+  </a>
+</div>
+<div id="posts" class="mb-5">
+  {{ partial "partials/post-list.html" . }}
+</div>
+{{ end }}

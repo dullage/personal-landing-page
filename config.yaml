@@ -1,0 +1,10 @@
+baseURL: "https://www.dullage.com/"
+languageCode: "en-gb"
+title: "Adam Dullage"
+
+module:
+  mounts:
+    - source: static
+      target: static
+    - source: node_modules/bootstrap-icons/font/fonts
+      target: static/scss/fonts
