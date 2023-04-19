@@ -36,3 +36,9 @@ img {
 .container-fluid {
   max-width: 720px;
 }
+
+.post-separator {
+  border-left: 1px solid var(--colour-text-muted);
+  height: 2rem;
+  margin: 1rem 0;
+}

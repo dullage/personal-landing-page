@@ -33,12 +33,15 @@
     </div>
   </div>
 
-  <a class="d-flex flex-column align-items-center" href="#posts">
-    <span>Posts</span>
-    <i class="bi bi-chevron-compact-down"></i>
-  </a>
+  <div id="posts"></div>
+  <div class="d-flex justify-content-center pt-3">
+    <a class="d-flex flex-column align-items-center" href="#posts">
+      <span>Posts</span>
+      <i class="bi bi-chevron-compact-down"></i>
+    </a>
+  </div>
 </div>
-<div id="posts" class="mb-5">
+<div class="mb-5">
   {{ partial "partials/post-list.html" . }}
 </div>
 {{ end }}
