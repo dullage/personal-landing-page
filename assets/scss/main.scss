@@ -1,8 +1,9 @@
 @import "bootstrap/dist/css/bootstrap";
 @import "bootstrap-icons/font/bootstrap-icons.scss";
 
-@import "./colours";
-@import "./typography";
+@import "./_colours.scss";
+@import "./_hero-animation.scss";
+@import "./_typography.scss";
 
 html,
 body {
@@ -12,7 +13,6 @@ body {
 body {
   background-color: var(--colour-background);
   color: var(--colour-text);
-  font-family: "Source Code Pro", monospace;
 }
 
 a {
@@ -25,6 +25,14 @@ a {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 .icon {
   color: var(--colour-text);
+}
+
+.container-fluid {
+  max-width: 720px;
 }

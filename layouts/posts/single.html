@@ -3,6 +3,14 @@
 {{ end }}
 
 {{ define "main" }}
+{{ partial "partials/back-navigation.html" . }}
+
 <h1>{{ .Title }}</h1>
-{{ .Content }}
+<h4 class="text-muted mb-5">
+  {{ .Date.Format "January 2, 2006" }}
+</h4>
+
+<div class="post-content mb-5">
+  {{ .Content }}
+</div>
 {{ end }}

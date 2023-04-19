@@ -1,0 +1,37 @@
+$hero-animation-line-height: 1.5rem * 1.21;
+
+.hero-animation-outer {
+  height: $hero-animation-line-height;
+  overflow: hidden;
+}
+
+.hero-animation-inner {
+  animation: text-animation 8s cubic-bezier(0.68, -0.6, 0.32, 1.5) infinite;
+  * {
+    margin: 0;
+  }
+}
+
+@keyframes text-animation {
+  0.00%, 11.11% {
+    transform: translateY(0);
+  }
+  16.67%, 27.78% {
+    transform: translateY(-$hero-animation-line-height);
+  }
+  33.33%, 44.44% {
+    transform: translateY(-$hero-animation-line-height * 2);
+  }
+  50.00%, 61.11% {
+    transform: translateY(-$hero-animation-line-height * 3);
+  }
+  66.67%, 77.78% {
+    transform: translateY(-$hero-animation-line-height * 4);
+  }
+  83.33%, 94.44% {
+    transform: translateY(-$hero-animation-line-height * 5);
+  }
+  100.00% {
+    transform: translateY(-$hero-animation-line-height * 6);
+  }
+}

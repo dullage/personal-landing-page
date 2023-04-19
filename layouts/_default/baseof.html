@@ -12,11 +12,14 @@
   {{ $stylesheet := $sass | resources.ToCSS $options }}
   <link rel="stylesheet" href="{{ $stylesheet.RelPermalink }}">
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Serif+Pro&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Source+Code+Pro&&display=swap&family=Poppins">
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid">
     {{ block "main" . }}{{ end }}
   </div>
 </body>
