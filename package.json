@@ -4,7 +4,7 @@
   "description": "My personal landing page.",
   "scripts": {
     "hugo-server": "set HUGO_VERSION=0.111.3/extended& hugo server",
-    "hugo-build": "set HUGO_VERSION=0.111.3/extended& hugo",
+    "hugo-build": "set HUGO_VERSION=0.111.3/extended& hugo --cleanDestinationDir",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adam Dullage",
