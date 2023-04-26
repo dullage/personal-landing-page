@@ -14,3 +14,6 @@ hugo.linux
 
 # npm
 node_modules/
+
+# Custom
+notes.md
