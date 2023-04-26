@@ -3,9 +3,14 @@ body {
   font-size: 1.25rem;
 }
 
-p {
+p,
+li {
   font-family: "Roboto Slab", serif;
   line-height: 2rem;
+}
+
+p,
+ul {
   margin-bottom: 2rem;
 }
 
@@ -25,4 +30,14 @@ p {
 
 .text-muted {
   color: var(--colour-text-muted) !important;
+}
+
+.post-content {
+  li {
+    margin-bottom: 0.75rem;
+  }
+}
+
+pre {
+  padding: 0.5rem;
 }
