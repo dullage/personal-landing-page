@@ -8,3 +8,8 @@ module:
       target: static
     - source: node_modules/bootstrap-icons/font/fonts
       target: static/scss/fonts
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
