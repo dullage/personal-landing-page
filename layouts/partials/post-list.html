@@ -1,9 +1,10 @@
 <div class="d-flex flex-column align-items-center">
   {{ range ( where .Site.RegularPages "Type" "posts" ) }}
   <div class="post-separator"></div>
-  <a href="{{ .Permalink }}">
-    <h3>{{ .Title }}</h3>
+  <a href="{{ .Permalink }}" class="d-flex flex-column align-items-center">
+    <span class="text-muted mb-3">{{ .Date.Format "January 2, 2006" }}</span>
+    <h3 class="mb-3">{{ .Title }}</h3>
+    <span class="text-center small">{{ .Params.Summary }}</span>
   </a>
-  <span class="text-muted">{{ .Date.Format "January 2, 2006" }}</span>
   {{ end }}
 </div>
