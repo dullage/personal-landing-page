@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "My personal landing page.",
   "scripts": {
-    "hugo-server": "set HUGO_VERSION=0.111.3/extended& hugo server",
+    "hugo-server": "set HUGO_VERSION=0.111.3/extended& hugo server --buildDrafts",
     "hugo-build": "set HUGO_VERSION=0.111.3/extended& hugo --cleanDestinationDir",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
