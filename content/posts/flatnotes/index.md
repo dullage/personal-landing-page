@@ -1,6 +1,6 @@
 ---
 title: "Introducing 'flatnotes'"
-summary: A self-hosted, database-less note-taking web app that utilises a flat folder of markdown files for storage.
+summary: "A self-hosted, database-less note-taking web app that utilises a flat folder of markdown files for storage."
 date: 2022-08-23
 ---
 
@@ -42,7 +42,7 @@ I designed flatnotes to be clean, simple and distraction-free. As soon as the ap
 
 The only additional UI element is a very minimal navbar in the top right.
 
-![Navbar](navbar.png)
+{{< figure src="navbar.png" >}}
 
 flatnotes intentionally omits any kind of hierarchical structure (e.g. folders). I used to spend way too much time carefully organising my notes into separate folders (or notebooks as they're known in Evernote) but I never actually benefitted from that additional admin as I would just naturally be drawn to using the search functionality.
 

@@ -1,6 +1,6 @@
 ---
 title: "Introducing 'eyelign'"
-summary: A command line tool to align multiple portrait photos by eye position.
+summary: "A command line tool to align multiple portrait photos by eye position."
 date: 2022-06-25
 ---
 
