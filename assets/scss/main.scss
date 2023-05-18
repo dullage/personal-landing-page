@@ -80,11 +80,24 @@ a {
     opacity: 0.6;
   }
 }
-.post-content a {
-  text-decoration: underline;
+
+.post-content {
+  a {
+    text-decoration: underline;
+  }
+
+  figure {
+    text-align: center;
+    margin-bottom: 2rem;
+    p {
+      color: var(--colour-text-muted);
+      font-size: $small-font-size;
+    }
+  }
 }
 
-img, video {
+img,
+video {
   max-width: 100%;
 }
 
