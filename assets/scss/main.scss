@@ -81,6 +81,20 @@ a {
   }
 }
 
+table {
+  margin-bottom: 2rem;
+  tbody tr:nth-child(odd) {
+    background-color: var(--colour-background-light);
+  }
+  td,
+  th {
+    padding: 0.25rem 1rem;
+  }
+  td {
+    border-top: 4px solid var(--colour-background);
+  }
+}
+
 .post-content {
   a {
     text-decoration: underline;
