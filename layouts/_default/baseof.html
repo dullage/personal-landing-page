@@ -1,32 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    {{ $css := resources.Get "css/main.css" }}
+    {{ $scss := resources.Get "scss/hero-animation.scss" }}
+    {{ $css = $css | resources.PostCSS }}
+    {{ $scss = $scss | resources.ToCSS | resources.PostCSS }}
+    {{ if hugo.IsProduction }}
+      {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+      {{ $scss = $scss | minify | fingerprint | resources.PostProcess }}
+    {{ else }}
+      <!-- https://www.brycewray.com/posts/2022/03/making-tailwind-jit-work-hugo-version-3-edition/ -->
+      {{ $css = $css | resources.ExecuteAsTemplate (printf "css/main.dev.%v.css" now.UnixMilli) . }}
+    {{ end }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+    <link rel="stylesheet" href="{{ $scss.RelPermalink }}" />
 
-  {{ $options := (dict "includePaths" (slice "node_modules")) -}}
-  {{ $sass := resources.Get "scss/main.scss" }}
-  {{ $stylesheet := $sass | resources.ToCSS $options }}
-  <link rel="stylesheet" href="{{ $stylesheet.RelPermalink }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Source+Code+Pro&&display=swap&family=Poppins"
+    />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Source+Code+Pro&&display=swap&family=Poppins">
-</head>
-
-<body>
-  <div class="container-fluid pb-5">
-    {{ block "main" . }}{{ end }}
-  </div>
-</body>
-
+  <body class="bg-colour-background text-colour-text">
+    <div class="container mx-auto px-3 py-4">
+      {{ block "main" . }}{{ end }}
+    </div>
+  </body>
 </html>

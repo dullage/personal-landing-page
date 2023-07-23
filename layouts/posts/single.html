@@ -1,16 +1,19 @@
 {{ define "title" }}
-{{ .Title }} &ndash; {{ .Site.Title }}
+  {{ .Title }} &ndash;
+  {{ .Site.Title }}
 {{ end }}
 
 {{ define "main" }}
-{{ partial "partials/back-navigation.html" . }}
 
-<h1>{{ .Title }}</h1>
-<h4 class="text-muted mb-5">
-  {{ .Date.Format "January 2, 2006" }}
-</h4>
+  {{ partial "home-navigation.html" . }}
 
-<div class="post-content mb-5">
-  {{ .Content }}
-</div>
+
+  <h1 class="mb-2 text-4xl">{{ .Title }}</h1>
+  <h2 class="mb-10 text-2xl text-colour-muted">
+    {{ .Date.Format "January 2, 2006" }}
+  </h2>
+
+  <article class="mb-12">
+    {{ .Content }}
+  </article>
 {{ end }}

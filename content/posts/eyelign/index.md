@@ -4,9 +4,9 @@ summary: "A command line tool to align multiple portrait photos by eye position.
 date: 2022-06-25
 ---
 
-[eyelign](https://github.com/Dullage/eyelign) is a command line tool to align multiple portrait photos by eye position.
+[eyelign](https://github.com/dullage/eyelign) is a command line tool to align multiple portrait photos by eye position.
 
-<div class="d-flex justify-content-center mb-5">
+<div class="flex justify-center mb-8">
   <video src="blue.mp4" autoplay loop playsinline></video>
 </div>
 
@@ -70,4 +70,4 @@ This example `.eyelign` file has 2 images saved, one with eye positions and one 
 
 The output images can then be used to create a timelapse using any tool that supports it. I use [ffmpeg](https://ffmpeg.org/) to create the timelapse.
 
-Please see [the GitHub repo](https://github.com/Dullage/eyelign) for further details and usage instructions.
+Please see [the GitHub repo](https://github.com/dullage/eyelign) for further details and usage instructions.
