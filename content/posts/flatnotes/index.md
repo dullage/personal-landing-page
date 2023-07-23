@@ -46,7 +46,7 @@ The only additional UI element is a very minimal navbar in the top right.
 
 flatnotes intentionally omits any kind of hierarchical structure (e.g. folders). I used to spend way too much time carefully organising my notes into separate folders (or notebooks as they're known in Evernote) but I never actually benefitted from that additional admin as I would just naturally be drawn to using the search functionality.
 
-Although there aren't any folders, flatnotes does support the concept of tagging. You can "tag" an issue by using a hashtag anywhere in the content of a note. For example, a note with the following content would be tagged with personal and holiday:
+Although there aren't any folders, flatnotes does support the concept of tagging. You can "tag" a note by using a hashtag anywhere in the content. For example, a note with the following content would be tagged with personal and holiday:
 
 ```markdown
 # Holiday Ideas
