@@ -59,7 +59,7 @@ Although there aren't any folders, flatnotes does support the concept of tagging
 #personal #holiday
 ```
 
-These tags are then searchable both directly (i.e. show me all the notes tagged with `#holiday') and indirectly (i.e. show me all the notes that contain the word 'holiday' either as a tag or in the rest of the content).
+These tags are then searchable both directly (i.e. show me all the notes tagged with `#holiday`) and indirectly (i.e. show me all the notes that contain the word 'holiday' either as a tag or in the rest of the content).
 
 ![Search Result](search-result.png)
 

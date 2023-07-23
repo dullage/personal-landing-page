@@ -1,0 +1,94 @@
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    article h1 {
+        @apply text-4xl;
+    }
+
+    article h2 {
+        @apply text-3xl;
+    }
+
+    article h3 {
+        @apply text-2xl;
+    }
+
+    article h4 {
+        @apply text-xl;
+    }
+
+    article h5 {
+        @apply text-xl;
+    }
+
+    article h6 {
+        @apply text-xl;
+    }
+
+    article h1,
+    article h2,
+    article h3,
+    article h4,
+    article h5,
+    article h6 {
+        @apply mb-4 mt-14;
+    }
+
+    article p,
+    article li {
+        @apply font-serif leading-8 text-xl;
+    }
+
+    article p,
+    article ul,
+    article ol,
+    article figure,
+    article pre,
+    article table {
+        @apply mb-8;
+    }
+
+    article pre {
+        @apply p-2;
+    }
+
+    article ul {
+        @apply list-disc list-outside pl-10;
+    }
+
+    article ol {
+        @apply list-decimal list-outside pl-10;
+    }
+
+    article li {
+        @apply mb-3;
+    }
+
+    article a {
+        @apply underline;
+    }
+
+    article code:not(pre code) {
+        @apply bg-colour-background-light py-1 px-2 text-base rounded;
+    }
+
+    article tbody tr:nth-child(odd) {
+        @apply bg-colour-background-light;
+    }
+
+    article td,
+    article th {
+        @apply py-1 px-4;
+    }
+
+    article figure {
+        @apply flex flex-col items-center;
+    }
+
+    article figure p {
+        @apply text-base text-colour-muted mb-0;
+    }
+}
