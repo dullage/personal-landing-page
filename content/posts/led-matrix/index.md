@@ -2,7 +2,6 @@
 title: "LED Matrix"
 summary: "A tale of 3D modelling, laser cutting and avoiding soldering irons."
 date: 2023-08-06
-draft: true
 ---
 
 ![alexander-grey-_Y3IuVbPpmU-unsplash.jpg](alexander-grey-_Y3IuVbPpmU-unsplash.jpg)
