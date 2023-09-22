@@ -73,11 +73,11 @@
         }
 
         code:not(pre code) {
-            @apply bg-colour-background-light py-1 px-2 text-base rounded;
+            @apply bg-colour-background-elevated py-1 px-2 text-base rounded;
         }
 
         tbody tr:nth-child(odd) {
-            @apply bg-colour-background-light;
+            @apply bg-colour-background-elevated;
         }
 
         td,

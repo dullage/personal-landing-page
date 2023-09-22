@@ -13,10 +13,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        "colour-text": colours.gray[100],
-        "colour-muted": colours.gray[500],
-        "colour-background": colours.gray[900],
-        "colour-background-light": colours.gray[700],
+        "colour-text": colours.gray[700],
+        "colour-muted": colours.gray[400],
+        "colour-background": colours.white,
+        "colour-background-elevated": colours.gray[200],
       },
     },
   },
