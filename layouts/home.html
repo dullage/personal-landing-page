@@ -3,8 +3,18 @@
     <!-- Centered Content -->
     <div class="flex grow flex-col justify-center">
       <!-- Hero -->
-      <div class="mb-16 font-mono">
-        <h1 class="text-5xl md:text-7xl">Adam Dullage</h1>
+      <div class="mb-16 flex flex-col items-center">
+        {{ $image := resources.Get "images/profile-photo.jpg" }}
+        <!-- Image width variable -->
+        {{ $imageWidth := 220 }}
+        {{ $image := $image.Resize (printf "%dx Lanczos q100" $imageWidth) }}
+        <img
+          src="{{ $image.RelPermalink }}"
+          class="mb-8 rounded-full border-4 border-colour-muted"
+          width="{{ $imageWidth }}"
+          height="{{ $imageWidth }}"
+        />
+        <h1 class="text-5xl md:text-6xl">Hi, I'm Adam</h1>
         <div class="hero-animation-outer">
           <div class="hero-animation-inner text-2xl">
             <h2>UX Designer</h2>
