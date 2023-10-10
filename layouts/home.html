@@ -10,6 +10,7 @@
         {{ $image := $image.Resize (printf "%dx Lanczos q100" $imageWidth) }}
         <img
           src="{{ $image.RelPermalink }}"
+          alt="Photo of Adam Dullage"
           class="mb-8 rounded-full border-4 border-colour-muted"
           width="{{ $imageWidth }}"
           height="{{ $imageWidth }}"

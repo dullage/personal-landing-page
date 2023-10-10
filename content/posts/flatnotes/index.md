@@ -4,7 +4,7 @@ summary: "A self-hosted, database-less note-taking web app that utilises a flat 
 date: 2022-08-23
 ---
 
-![diana-polekhina-1ixT36dfuSQ-unsplash](diana-polekhina-1ixT36dfuSQ-unsplash.jpg)
+![A pen atop a blank notepad](diana-polekhina-1ixT36dfuSQ-unsplash.jpg)
 
 flatnotes is a self-hosted, database-less note-taking web app that utilises a flat folder of markdown files for storage.
 
