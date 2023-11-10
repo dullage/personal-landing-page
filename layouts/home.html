@@ -8,13 +8,15 @@
         <!-- Image width variable -->
         {{ $imageWidth := 220 }}
         {{ $image := $image.Resize (printf "%dx Lanczos q100" $imageWidth) }}
-        <img
-          src="{{ $image.RelPermalink }}"
-          alt="Photo of Adam Dullage"
-          class="mb-8 rounded-full border-4 border-colour-muted"
-          width="{{ $imageWidth }}"
-          height="{{ $imageWidth }}"
-        />
+        <div class="mb-8 rounded-full border-4 border-colour-muted">
+          <img
+            src="{{ $image.RelPermalink }}"
+            alt="Photo of Adam Dullage"
+            class="rounded-full"
+            width="{{ $imageWidth }}"
+            height="{{ $imageWidth }}"
+          />
+        </div>
         <h1 class="text-5xl md:text-6xl">Hi, I'm Adam</h1>
         <div class="hero-animation-outer">
           <div class="hero-animation-inner text-2xl">
