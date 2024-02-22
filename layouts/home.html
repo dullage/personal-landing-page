@@ -4,8 +4,8 @@
     <div class="flex grow flex-col justify-center">
       <!-- Hero -->
       <div class="mb-16 flex flex-col items-center">
+        <!-- Image -->
         {{ $image := resources.Get "images/profile-photo.jpg" }}
-        <!-- Image width variable -->
         {{ $imageWidth := 220 }}
         {{ $image := $image.Resize (printf "%dx Lanczos q100" $imageWidth) }}
         <div class="mb-8 rounded-full border-4 border-colour-muted">
@@ -17,8 +17,10 @@
             height="{{ $imageWidth }}"
           />
         </div>
+        <!-- Hi -->
         <h1 class="text-5xl md:text-6xl">Hi, I'm Adam</h1>
-        <div class="hero-animation-outer">
+        <!-- Roles -->
+        <div class="hero-animation-outer mb-1">
           <div class="hero-animation-inner text-2xl">
             <h2>UX Designer</h2>
             <h2>Product Owner</h2>
@@ -27,6 +29,13 @@
             <h2>Maker</h2>
             <h2>Dad</h2>
             <h2>UX Designer</h2>
+          </div>
+        </div>
+        <!-- Location -->
+        <div>
+          <div class="inline-flex items-center text-colour-muted">
+            {{ partial "icon.html" "geo-alt" }}
+            <span class="ms-2">England, South East</span>
           </div>
         </div>
       </div>
