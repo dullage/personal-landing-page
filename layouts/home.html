@@ -1,64 +1,72 @@
 {{ define "main" }}
-  <div class="flex h-screen flex-col text-center">
-    <!-- Centered Content -->
-    <div class="flex grow flex-col justify-center">
-      <!-- Hero -->
-      <div class="mb-16 flex flex-col items-center">
-        <!-- Image -->
-        {{ $image := resources.Get "images/profile-photo.jpg" }}
-        {{ $imageWidth := 220 }}
-        {{ $image := $image.Resize (printf "%dx Lanczos q100" $imageWidth) }}
-        <div class="mb-8 rounded-full border-4 border-colour-muted">
-          <img
-            src="{{ $image.RelPermalink }}"
-            alt="Photo of Adam Dullage"
-            class="rounded-full"
-            width="{{ $imageWidth }}"
-            height="{{ $imageWidth }}"
-          />
-        </div>
-        <!-- Hi -->
-        <h1 class="text-5xl md:text-6xl">Hi, I'm Adam</h1>
-        <!-- Roles -->
-        <div class="hero-animation-outer mb-1">
-          <div class="hero-animation-inner text-2xl">
-            <h2>UX Designer</h2>
-            <h2>Product Owner</h2>
-            <h2>Open Source Developer</h2>
-            <h2>Paraglider Pilot</h2>
-            <h2>Maker</h2>
-            <h2>Dad</h2>
-            <h2>UX Designer</h2>
+  <div class="bg-black text-slate-200">
+    <!-- Top Outer -->
+    <div class="hero-bg-image">
+      <!-- Top Inner -->
+      <div class="padded-container flex h-screen flex-col text-center">
+        <!-- Centered Content -->
+        <div class="flex grow flex-col justify-center">
+          <!-- Hero -->
+          <div class="mb-16 flex flex-col items-center">
+            <!-- Image -->
+            {{ $image := resources.Get "images/profile-photo.jpg" }}
+            {{ $imageWidth := 220 }}
+            {{ $image := $image.Resize (printf "%dx Lanczos q100" $imageWidth) }}
+            <div class="mb-8 rounded-full border-4">
+              <img
+                src="{{ $image.RelPermalink }}"
+                alt="Photo of Adam Dullage"
+                class="rounded-full"
+                width="{{ $imageWidth }}"
+                height="{{ $imageWidth }}"
+              />
+            </div>
+            <!-- Hi -->
+            <h1 class="text-5xl md:text-6xl">Hi, I'm Adam</h1>
+            <!-- Roles -->
+            <div class="hero-animation-outer mb-1">
+              <div class="hero-animation-inner text-2xl">
+                <h2>UX Designer</h2>
+                <h2>Product Owner</h2>
+                <h2>Open Source Developer</h2>
+                <h2>Paraglider Pilot</h2>
+                <h2>Maker</h2>
+                <h2>Dad</h2>
+                <h2>UX Designer</h2>
+              </div>
+            </div>
+            <!-- Location -->
+            <div>
+              <div class="inline-flex items-center text-colour-muted">
+                {{ partial "icon.html" "geo-alt" }}
+                <span class="ms-1">England, South East</span>
+              </div>
+            </div>
+          </div>
+          <!-- Contact Details -->
+          <div
+            class="flex flex-col items-center gap-x-16 gap-y-6 md:flex-row md:justify-center"
+          >
+            {{ partial "button.html" (dict "iconId" "linkedin" "label" "LinkedIn" "href" "https://www.linkedin.com/in/adamdullage/") }}
+            {{ partial "button.html" (dict "iconId" "envelope-fill" "label" "Email" "href" "mailto:adam@dullage.com") }}
+            {{ partial "button.html" (dict "iconId" "github" "label" "GitHub" "href" "https://github.com/dullage") }}
           </div>
         </div>
-        <!-- Location -->
-        <div>
-          <div class="inline-flex items-center text-colour-muted">
-            {{ partial "icon.html" "geo-alt" }}
-            <span class="ms-1">England, South East</span>
-          </div>
+        <!-- Posts Button -->
+        <div id="posts">
+          <a
+            class="inline-flex flex-col items-center text-xl hover:opacity-60"
+            href="#posts"
+          >
+            <span>Posts</span>
+            {{ partial "icon.html" "chevron-compact-down" }}
+          </a>
         </div>
-      </div>
-      <!-- Contact Details -->
-      <div
-        class="flex flex-col items-center gap-x-16 gap-y-6 md:flex-row md:justify-center"
-      >
-        {{ partial "button.html" (dict "iconId" "linkedin" "label" "LinkedIn" "href" "https://www.linkedin.com/in/adamdullage/") }}
-        {{ partial "button.html" (dict "iconId" "envelope-fill" "label" "Email" "href" "mailto:adam@dullage.com") }}
-        {{ partial "button.html" (dict "iconId" "github" "label" "GitHub" "href" "https://github.com/dullage") }}
       </div>
     </div>
-    <!-- Posts Button -->
-    <div id="posts" class="p-8">
-      <a
-        class="inline-flex flex-col items-center text-xl hover:opacity-60"
-        href="#posts"
-      >
-        <span>Posts</span>
-        {{ partial "icon.html" "chevron-compact-down" }}
-      </a>
+    <!-- Bottom -->
+    <div class="padded-container pb-16">
+      {{ partial "partials/post-list.html" . }}
     </div>
   </div>
-  <!-- Posts -->
-  <div class="mb-20">{{ partial "partials/post-list.html" . }}</div>
 {{ end }}

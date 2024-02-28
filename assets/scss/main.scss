@@ -1,0 +1,56 @@
+// Hero Animation
+$hero-animation-line-height: 40px;
+$numItems: 6; // Excludes repeated last item
+$pauseSeconds: 0.6;
+$animationSeconds: 0.5;
+
+$stepSeconds: $pauseSeconds + $animationSeconds;
+$totalSeconds: $stepSeconds * $numItems;
+$timeUnitPercentage: 100% / $totalSeconds;
+
+.hero-animation-outer {
+  height: $hero-animation-line-height;
+  overflow: hidden;
+}
+
+.hero-animation-inner {
+  animation: hero-animation #{$totalSeconds}s
+    cubic-bezier(0.68, -0.6, 0.32, 1.5) infinite;
+  * {
+    margin: 0;
+    line-height: $hero-animation-line-height;
+  }
+}
+
+@keyframes hero-animation {
+  $firstPercentage: 0%;
+  @for $i from 0 through $numItems {
+    $secondPercentage: $firstPercentage + ($timeUnitPercentage * $pauseSeconds);
+    @if ($secondPercentage < 100%) {
+      #{$firstPercentage},
+      #{$secondPercentage} {
+        transform: translateY(-$hero-animation-line-height * $i);
+      }
+    } @else {
+      #{$firstPercentage} {
+        transform: translateY(-$hero-animation-line-height * $i);
+      }
+    }
+    $firstPercentage: $firstPercentage + ($timeUnitPercentage * $stepSeconds);
+  }
+}
+
+// Background Image
+.hero-bg-image {
+  background-image: url("/background/john-towner-JgOeRuGD_Y4-unsplash_3840.webp");
+  background-size: cover;
+  background-position: center;
+
+  @media (max-width: 1920px) {
+    background-image: url("/background/john-towner-JgOeRuGD_Y4-unsplash_1920.webp");
+  }
+
+  @media (max-width: 720px) {
+    background-image: url("/background/john-towner-JgOeRuGD_Y4-unsplash_720.webp");
+  }
+}

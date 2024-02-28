@@ -7,7 +7,7 @@
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 
     {{ $css := resources.Get "css/main.css" }}
-    {{ $scss := resources.Get "scss/hero-animation.scss" }}
+    {{ $scss := resources.Get "scss/main.scss" }}
     {{ $css = $css | resources.PostCSS }}
     {{ $scss = $scss | resources.ToCSS | resources.PostCSS }}
     {{ if hugo.IsProduction }}
@@ -34,8 +34,6 @@
   </head>
 
   <body class="bg-colour-background text-colour-text">
-    <div class="container mx-auto px-3 py-4">
-      {{ block "main" . }}{{ end }}
-    </div>
+    {{ block "main" . }}{{ end }}
   </body>
 </html>

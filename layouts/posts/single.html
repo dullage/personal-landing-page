@@ -4,16 +4,17 @@
 {{ end }}
 
 {{ define "main" }}
+  <div class="padded-container">
+    {{ partial "home-navigation.html" . }}
 
-  {{ partial "home-navigation.html" . }}
 
+    <h1 class="mb-2 text-4xl">{{ .Title }}</h1>
+    <h2 class="mb-10 text-2xl text-colour-muted">
+      {{ .Date.Format "January 2, 2006" }}
+    </h2>
 
-  <h1 class="mb-2 text-4xl">{{ .Title }}</h1>
-  <h2 class="mb-10 text-2xl text-colour-muted">
-    {{ .Date.Format "January 2, 2006" }}
-  </h2>
-
-  <article class="mb-12">
-    {{ .Content }}
-  </article>
+    <article class="mb-12">
+      {{ .Content }}
+    </article>
+  </div>
 {{ end }}
