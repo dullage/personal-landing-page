@@ -3,21 +3,21 @@
   "version": "0.0.0",
   "description": "My personal landing page.",
   "scripts": {
-    "hugo-server": "set HUGO_VERSION=0.111.3/extended& hugo server --buildDrafts",
-    "hugo-build": "set HUGO_VERSION=0.111.3/extended& hugo --cleanDestinationDir --minify --verbose",
-    "hugo-build-linux": "HUGO_VERSION=0.111.3/extended hugo --cleanDestinationDir --minify",
+    "dev": "set HUGO_VERSION=0.128.2/extended& hugo server --buildDrafts",
+    "build": "set HUGO_VERSION=0.128.2/extended& hugo --cleanDestinationDir --minify --verbose",
+    "build-linux": "HUGO_VERSION=0.128.2/extended hugo --cleanDestinationDir --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adam Dullage",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "hugo-cli": "0.12.2",
-    "postcss": "^8.4.26",
-    "postcss-cli": "^10.1.0",
-    "prettier": "^3.0.0",
+    "autoprefixer": "10.4.19",
+    "hugo-cli": "0.13.0",
+    "postcss": "8.4.39",
+    "postcss-cli": "11.0.0",
+    "prettier": "3.3.2",
     "prettier-plugin-go-template": "0.0.15",
-    "prettier-plugin-tailwindcss": "^0.4.1",
-    "tailwindcss": "3.3.3"
+    "prettier-plugin-tailwindcss": "0.6.5",
+    "tailwindcss": "3.4.4"
   }
 }
