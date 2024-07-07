@@ -1,7 +1,7 @@
 // Hero Animation
 $hero-animation-line-height: 40px;
-$numItems: 6; // Excludes repeated last item
-$pauseSeconds: 0.6;
+$numItems: 3; // Excludes repeated last item
+$pauseSeconds: 0.8;
 $animationSeconds: 0.5;
 
 $stepSeconds: $pauseSeconds + $animationSeconds;
