@@ -10,7 +10,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "hugo-server"],
+      "runtimeArgs": ["run", "dev"],
       "console": "integratedTerminal"
     }
   ]
