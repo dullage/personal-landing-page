@@ -28,7 +28,7 @@ At the same time Evernote were introducing the new device limit, I also found my
 
 There are, however, occasions when formatting is useful and so I soon adopted Markdown as my format of choice. I found that it was a good compromise between the simplicity of plain text and the formatting of a rich text editor (like Evernote).
 
-And so, I dropped Evernote in favor of my own patchwork markdown solution. To create and edit my notes I used [Typora](https://typora.io/) on Windows and [1Writer](http://1writerapp.com/) on iOS. Both used a single Dropbox folder to keep things in sync. This worked well for a number of years but was a fairly convoluted setup and so I went in search for a better solution.
+And so, I dropped Evernote in favour of my own patchwork markdown solution. To create and edit my notes I used [Typora](https://typora.io/) on Windows and [1Writer](http://1writerapp.com/) on iOS. Both used a single Dropbox folder to keep things in sync. This worked well for a number of years but was a fairly convoluted setup and so I went in search for a better solution.
 
 To avoid another surprise change in pricing model I wanted something self-hosted and open-source and in that regard, there is  certainly plenty of choice. Just take a look at the [Awesome-Selfhosted list](https://github.com/awesome-selfhosted/awesome-selfhosted#note-taking--editors) and you'll see plenty of great apps. At the time, I went through every option in that list and although some came close, none quite made the mark. In particular, a lot of the choices that supported markdown utilised a split view where the raw markdown is on the left and the rendered view is on the right. I wanted something more akin to the [Bear app](https://bear.app/) where you can write in raw markdown that is then rendered inline.
 
@@ -44,7 +44,7 @@ The only additional UI element is a very minimal navbar in the top right.
 
 {{< figure src="navbar.png" >}}
 
-flatnotes intentionally omits any kind of hierarchical structure (e.g. folders). I used to spend way too much time carefully organising my notes into separate folders (or notebooks as they're known in Evernote) but I never actually benefitted from that additional admin as I would just naturally be drawn to using the search functionality.
+flatnotes intentionally omits any kind of hierarchical structure (e.g. folders). I used to spend way too much time carefully organising my notes into separate folders (or notebooks as they're known in Evernote) but I never actually benefited from that additional admin as I would just naturally be drawn to using the search functionality.
 
 Although there aren't any folders, flatnotes does support the concept of tagging. You can "tag" a note by using a hashtag anywhere in the content. For example, a note with the following content would be tagged with personal and holiday:
 

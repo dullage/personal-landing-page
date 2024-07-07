@@ -10,17 +10,17 @@ date: 2022-06-25
   <video src="blue.mp4" autoplay loop playsinline></video>
 </div>
 
-When my daughter was born, I decided to take a portrait photo of her every week with the idea of creating a timelapse when she is older.
+When my daughter was born, I decided to take a portrait photo of her every week with the idea of creating a time-lapse when she is older.
 
 I started out using an iOS app tailored for this purpose but I wasn't a fan of being locked into the app and the backup options were limited.
 
-I then switched to simply using _any_ app or camera to take the photos and set out to find something that could create the timelapse. There were a few considerations:
+I then switched to simply using _any_ app or camera to take the photos and set out to find something that could create the time-lapse. There were a few considerations:
 
 - **I was looking for an open-source solution.**  
   This is to avoid app lock-in.
 - **The source images would be varied in size and aspect ratio.**
 - **I wanted the eyes to be aligned in each frame.**  
-  This type of timelapse is much more pleasant to watch when the eyes are aligned.
+  This type of time-lapse is much more pleasant to watch when the eyes are aligned.
 - **The position of my daughter's eyes would vary between photos.**  
   As I write this she's 4 and it's hard enough to keep her still for 5 seconds let alone get the photo perfectly aligned!
 - **The rotation of my daughter's face would vary between photos.**
@@ -68,6 +68,6 @@ This example `.eyelign` file has 2 images saved, one with eye positions and one 
 }
 ```
 
-The output images can then be used to create a timelapse using any tool that supports it. I use [ffmpeg](https://ffmpeg.org/) to create the timelapse.
+The output images can then be used to create a time-lapse using any tool that supports it. I use [ffmpeg](https://ffmpeg.org/) to create the time-lapse.
 
 Please see [the GitHub repo](https://github.com/dullage/eyelign) for further details and usage instructions.
