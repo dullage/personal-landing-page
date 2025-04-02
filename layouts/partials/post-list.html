@@ -2,9 +2,6 @@
   {{ range ( where .Site.RegularPages "Type" "posts" ) }}
     <div class="my-4 h-12 border-l-[1px] border-muted"></div>
     <a href="{{ .Permalink }}" class="text-center hover:opacity-60">
-      <h2 class="mb-4 text-xl text-colour-muted">
-        {{ .Date.Format "January 2, 2006" }}
-      </h2>
       <h1 class="mb-4 text-3xl">{{ .Title }}</h1>
       <p class="text-lg">{{ .Params.Summary }}</p>
     </a>
