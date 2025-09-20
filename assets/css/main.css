@@ -76,6 +76,10 @@
             @apply underline;
         }
 
+        code {
+            @apply text-wrap;
+        }
+
         code:not(pre code) {
             @apply bg-colour-background-elevated py-1 px-2 text-base rounded;
         }
