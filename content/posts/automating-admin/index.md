@@ -26,6 +26,8 @@ The first question was, can I get Paperless to "do something" when a new documen
 
 ![Paperless Workflow](paperless-workflow.png)
 
+*Edit: In the version of Paperless depicted in the screenshot above, single curly braces were required for the `doc_url` template field. This has since change to the more standard double curly braces i.e. `{{doc_url}}`.*
+
 Next up, I needed something to handle the webhook call and do all the processing. This seemed like the perfect use case for the [n8n](https://n8n.io/) automation platform (another service I self-host). As well as supporting webhooks, n8n also integrates with OpenAI and includes many powerful AI workflow tools. Here's what I landed on:
 
 ![n8n Automation](n8n-automation.png)
