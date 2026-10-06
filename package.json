@@ -3,9 +3,8 @@
   "version": "0.0.0",
   "description": "My personal landing page.",
   "scripts": {
-    "dev": "set HUGO_VERSION=0.128.2/extended& hugo server --buildDrafts",
-    "build": "set HUGO_VERSION=0.128.2/extended& hugo --cleanDestinationDir --minify --verbose",
-    "build-linux": "HUGO_VERSION=0.128.2/extended hugo --cleanDestinationDir --minify",
+    "dev": "HUGO_VERSION=0.128.2/extended hugo server --buildDrafts",
+    "build": "HUGO_VERSION=0.128.2/extended hugo --cleanDestinationDir --minify --verbose",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adam Dullage",
