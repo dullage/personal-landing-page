@@ -1,7 +1,7 @@
 {{ define "main" }}
-  <div class="bg-black text-slate-200">
+  <div class="text-slate-200">
     <!-- Top Outer -->
-    <div class="hero-bg-image">
+    <div class="hero-bg">
       <!-- Top Inner -->
       <div class="padded-container flex h-screen flex-col text-center">
         <!-- Centered Content -->
@@ -62,8 +62,10 @@
       </div>
     </div>
     <!-- Bottom -->
-    <div class="padded-container pb-16">
-      {{ partial "partials/post-list.html" . }}
+    <div class="hero-bg-base">
+      <div class="padded-container pb-16">
+        {{ partial "partials/post-list.html" . }}
+      </div>
     </div>
   </div>
 {{ end }}

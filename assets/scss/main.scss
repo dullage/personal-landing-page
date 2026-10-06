@@ -40,17 +40,23 @@ $timeUnitPercentage: 100% / $totalSeconds;
   }
 }
 
-// Background Image
-.hero-bg-image {
-  background-image: url("/background/john-towner-JgOeRuGD_Y4-unsplash_3840.webp");
-  background-size: cover;
-  background-position: center;
+// Background
+.hero-bg {
+  background: radial-gradient(ellipse at 50% 0%, #1a2438 0%, #0d1523 75%);
+  position: relative;
 
-  @media (max-width: 1920px) {
-    background-image: url("/background/john-towner-JgOeRuGD_Y4-unsplash_1920.webp");
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(rgba(148, 163, 184, 0.22) 1px, transparent 1.4px);
+    background-size: 26px 26px;
+    -webkit-mask-image: radial-gradient(ellipse 75% 70% at 50% 42%, #000 30%, transparent 78%);
+    mask-image: radial-gradient(ellipse 75% 70% at 50% 42%, #000 30%, transparent 78%);
   }
+}
 
-  @media (max-width: 720px) {
-    background-image: url("/background/john-towner-JgOeRuGD_Y4-unsplash_720.webp");
-  }
+.hero-bg-base {
+  background-color: #0d1523;
 }
