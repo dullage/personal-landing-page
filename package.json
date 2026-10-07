@@ -3,15 +3,16 @@
   "version": "0.0.0",
   "description": "My personal landing page.",
   "scripts": {
-    "dev": "HUGO_VERSION=0.128.2/extended hugo server --buildDrafts",
-    "build": "HUGO_VERSION=0.128.2/extended hugo --cleanDestinationDir --minify --verbose",
+    "dev": "hugo server --buildDrafts",
+    "build": "hugo --cleanDestinationDir --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adam Dullage",
   "license": "MIT",
+  "browserslist": "defaults",
   "devDependencies": {
     "autoprefixer": "10.4.19",
-    "hugo-cli": "0.13.0",
+    "hugo-extended": "^0.166.0",
     "postcss": "8.4.39",
     "postcss-cli": "11.0.0",
     "prettier": "3.3.2",

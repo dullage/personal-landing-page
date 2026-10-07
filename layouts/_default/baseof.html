@@ -8,8 +8,8 @@
 
     {{ $css := resources.Get "css/main.css" }}
     {{ $scss := resources.Get "scss/main.scss" }}
-    {{ $css = $css | resources.PostCSS }}
-    {{ $scss = $scss | resources.ToCSS | resources.PostCSS }}
+    {{ $css = $css | css.PostCSS }}
+    {{ $scss = $scss | css.Sass | css.PostCSS }}
     {{ if hugo.IsProduction }}
       {{ $css = $css | minify | fingerprint | resources.PostProcess }}
       {{ $scss = $scss | minify | fingerprint | resources.PostProcess }}
