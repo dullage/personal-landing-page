@@ -18,7 +18,7 @@ Visit the GitHub repo [here](https://github.com/dullage/flatnotes) or see the ap
 - Note "tagging" functionality
 - Light/dark themes
 - Multiple authentication options (none, username/password, 2FA)
-- Restful API
+- RESTful API
 
 ## Why?
 
@@ -28,7 +28,7 @@ At the same time Evernote were introducing the new device limit, I also found my
 
 There are, however, occasions when formatting is useful and so I soon adopted Markdown as my format of choice. I found that it was a good compromise between the simplicity of plain text and the formatting of a rich text editor (like Evernote).
 
-And so, I dropped Evernote in favour of my own patchwork markdown solution. To create and edit my notes I used [Typora](https://typora.io/) on Windows and [1Writer](http://1writerapp.com/) on iOS. Both used a single Dropbox folder to keep things in sync. This worked well for a number of years but was a fairly convoluted setup and so I went in search for a better solution.
+And so, I dropped Evernote in favour of my own patchwork markdown solution. To create and edit my notes I used [Typora](https://typora.io/) on Windows and [1Writer](http://1writerapp.com/) on iOS. Both used a single Dropbox folder to keep things in sync. This worked well for a number of years but was a fairly convoluted setup and so I went in search of a better solution.
 
 To avoid another surprise change in pricing model I wanted something self-hosted and open-source and in that regard, there is  certainly plenty of choice. Just take a look at the [Awesome-Selfhosted list](https://github.com/awesome-selfhosted/awesome-selfhosted#note-taking--editors) and you'll see plenty of great apps. At the time, I went through every option in that list and although some came close, none quite made the mark. In particular, a lot of the choices that supported markdown utilised a split view where the raw markdown is on the left and the rendered view is on the right. I wanted something more akin to the [Bear app](https://bear.app/) where you can write in raw markdown that is then rendered inline.
 

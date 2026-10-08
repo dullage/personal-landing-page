@@ -48,7 +48,7 @@ The downside of CNC is that tight internal corners aren't possible and so in pla
 
 {{< figure src="dogbone.png" caption="Box joint with dogbones">}}
 
-After some research, I found that laser cutting services were more widely available and inexpensive than I'd initially thought and so I changed tack and started targetting a laser cut design. With the channel for the acrylic panel no longer possible, I needed to use a different method to hold it in place. To solve this, I chose to add a bezel to the front of the outer box which would retain the acrylic panel.
+After some research, I found that laser cutting services were more widely available and less expensive than I'd initially thought and so I changed tack and started targeting a laser cut design. With the channel for the acrylic panel no longer possible, I needed to use a different method to hold it in place. To solve this, I chose to add a bezel to the front of the outer box which would retain the acrylic panel.
 
 ![Bezel](bezel.png)
 
@@ -73,7 +73,7 @@ I tested each of these with LEDs at varying distances and ultimately decided on 
 
 The string style LEDs I chose were 12v WS2811 which, like the WS2812B's I'm used to, are individually addressable. The crucial difference is that they are 12v which will help with voltage drop across the 256 LEDs. For the amperage required, it also seems easier to get hold of 12v power supplies.
 
-For the microcontroller, I was planning on using an ESP8266 or ESP32 but as these these require 3.3v (and the LEDs 12v) I'd need to handle 2 different voltages. Luckily, I came across a board that would solve all this for me called a [QuinLED Dig Uno](https://quinled.info/pre-assembled-quinled-dig-uno/). This takes a 12v input, outputs 12v to the LEDs and also supplies the onboard ESP32 with the voltage it needs. As a bonus, it also comes pre-flashed with WLED.
+For the microcontroller, I was planning on using an ESP8266 or ESP32 but as these require 3.3v (and the LEDs 12v) I'd need to handle 2 different voltages. Luckily, I came across a board that would solve all this for me called a [QuinLED Dig Uno](https://quinled.info/pre-assembled-quinled-dig-uno/). This takes a 12v input, outputs 12v to the LEDs and also supplies the onboard ESP32 with the voltage it needs. As a bonus, it also comes pre-flashed with WLED.
 
 ## Laser Cutting
 
